@@ -1,0 +1,85 @@
+.block__btn {
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.block__btn__create {
+    
+    button {
+        background-color: #128076;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        color: white;
+    }
+}
+
+.block__btn__search {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+
+    .block__btn_green {
+        padding: 0 10px;
+        border: 1px solid #128076;
+        background-color: #e7f2f1;
+        color: #128076;
+        cursor: pointer;
+    }
+}
+
+.block__btn__popularity {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 10px !important;
+    position: relative;
+    button {
+        background-color: transparent;
+        color: black;
+        margin-right: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .svg {
+        fill: black;
+        transform: rotateX(1deg);
+        transition: all .5s ease;
+    }
+
+    .svg_active {
+        transform: rotateX(180deg);
+    }
+}
+
+.block__btn__categori {
+    position: absolute;
+    border: 1px solid #ebebeb;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: rotateX(90deg);
+    transition: all .5s ease;
+    overflow: hidden;
+    background-color: white;
+    span {
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+}
+
+.block__btn__categori_open {
+    transform: rotateX(1deg);
+}

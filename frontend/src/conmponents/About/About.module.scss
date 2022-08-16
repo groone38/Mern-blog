@@ -1,0 +1,49 @@
+.about {
+    margin-top: 50px;
+}
+
+.about__title {
+    margin: 10px 0 50px;
+}
+
+.about__avatar {
+    img {
+        width: 100px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.about__category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.about__btn {
+    width: 50%;
+    background-color: transparent;
+    color: #ababb3;
+    border: none;
+    border-bottom: 1px solid #ababb3;
+    cursor: pointer;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.about__btn_active {
+    color: #128076;
+    border-bottom: 4px solid #128076;
+}
+
+.about__info {
+    margin: 10px 0;
+    h2 {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}
